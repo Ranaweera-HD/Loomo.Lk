@@ -1,0 +1,261 @@
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+ }
+ 
+ h2 {
+     font-size: 46px;
+     line-height: 54px;
+     color: black;
+  }
+ 
+  h4 {
+     font-size: 20px;
+     color: black;
+  }
+ 
+  h6{
+     font-size: 12px;
+     font-weight: 700;
+  }
+ 
+  p{
+     font-size: 16px;
+     color: red;
+     margin: 15px 0 20px 0;
+  }
+  
+ 
+ body{
+     height: 100%;
+ }
+ 
+ /* Header */
+ 
+ .navbar{
+     padding: 10px 20px;
+     display: flex;
+     font-size: 16px;
+     font-weight: 400;
+     text-transform: capitalize;
+     justify-content: space-between;
+     align-items: center;
+     position: sticky;
+     top: 0;
+     z-index: 999;
+     background-color: bisque;
+     transition: all .42s ease;
+ }
+ 
+ .navbar .logo h1{
+     color: black
+ }
+ 
+ .navbar .menu li{
+ list-style: none;
+ display: inline-block;
+ 
+ 
+ }
+ .navbar .menu li a{
+     display: block;
+     margin-left: 20px;
+     color: black;
+     border-bottom: 4px solid transparent;
+     text-decoration: none;
+     font-size: 20px;
+     font-weight: 10px;
+     align-items: end;
+ }
+ 
+ .navbar .menu li a i{
+     color: black;
+ }
+ 
+ .navbar .menu li a:hover {
+     border-bottom: 2px solid black;
+ }
+ 
+ /* /content/ */
+ 
+ .sec{
+     padding: 5px 2%;
+ }
+ 
+ .content{
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+ }
+ 
+ .content{
+     /* background-image:url(1.jpg); */
+     background-size: cover;
+     background-repeat: no-repeat;
+     padding: 0 2%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-end;
+     color: black;
+     height: 40vh;
+     width: 60vh;
+ }
+ 
+ 
+ .content h1{
+     font-size: 40px;
+     margin-left: 0%;
+     margin-block-start: 1px;
+ }
+ 
+ .content p{
+     font-size: 20px;
+     margin-top: 20px;
+ }
+ 
+ .content button{
+     margin-top: 50px;
+     padding: 10px 15px;
+     border: 1;
+     background-color: white;
+     font-size: 20px;
+     border-radius: 10px;
+     cursor: pointer;
+ }
+ 
+ .pheading{
+     text-align: center;
+     margin: 50px 0;
+     color:black;
+ }
+ 
+ /* product */
+ 
+ .sec{
+     padding: 10px 5%;
+ }
+ 
+ .products{
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+ }
+ 
+ .products .card{
+     width: 320px;
+     background: rgb(227, 225, 225);
+     box-shadow: 0 ;
+     border-radius: 5px;
+     padding: 5px;
+     margin-bottom: 20px;
+ }
+ .products .card-Section{
+     width: 425px;
+     background:black;
+     box-shadow: 0;
+     border-radius: 1px;
+     padding: 5px;
+     margin-bottom: 10px;
+ }
+ 
+ .products .card img{
+     height: 350px;
+     width: 100%;
+ }
+ 
+ .products .card .desc{
+     padding: 5px 20px;
+     opacity: 0.8;
+ }
+ 
+ .products .card .title{
+     font-weight: 900;
+     font-size: 20px;
+     color: blue;
+     padding: 0 20px;
+ }
+ 
+ .products .card .box{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px;
+ }
+ 
+ .products .card .box .price{
+     color: rgb(153, 40, 15);
+     font-size: 20px;
+     font-weight: bold;
+ }
+ 
+ .products .card .box .btn{
+     font-size: 15px;
+     color:rgb(6, 6, 6);
+     padding: 10PX 18px;
+     font-weight: 900;
+     border: 1px solid black;
+     border-radius: 20px;
+ }
+ 
+ .products .card .box .btn:hover{
+     cursor: pointer;
+     background-color: red;
+     color: white;
+ }
+ 
+ /* /footer/ */
+ footer{
+     background-color: white;
+     height: 10vh;
+ }
+ 
+ footer p{
+     text-align: center;
+     line-height: 10vh;
+ }
+ 
+ footer p a {
+     text-decoration: none;
+     color: red;
+     font-weight: bold;
+ 
+ }
+ 
+ /* /Resonsive/ */
+ 
+ @media(max-width:820px){
+     .menu-btn{
+         display: block;
+         z-index: 999;
+     }
+ 
+     .menu-btn i.active::before{
+         content: "\f00d";  
+     }
+ 
+ .navbar .menu{
+     position: fixed;
+     height: 100vh;
+     width: 100%;
+     left: -100%;
+     top: 0;
+     background-color: white;
+     text-align: center;
+     padding-top: 80px;
+     transition: all 0.3s ease;
+ }
+ 
+ .navbar .menu.active{
+     left: 0%;
+     }
+ 
+ .navbar .menu li {
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .navbar .menu li a{
+     margin: 10px 0;
+     font-size: 25px;
+   }
+ }
