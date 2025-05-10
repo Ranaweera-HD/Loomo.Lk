@@ -9,9 +9,9 @@ const Navbar = () => {
     return (
         <div className='flex items-center justify-between py-0 font-medium'>
 
-            <img src={assets.logo} className='w-20' alt="" />
+            <Link to='/'><img src={assets.logo} className='w-36' alt="" /></Link>
 
-            <ul className='hidden sm:flex gap-6 text-sm text-gray-700'>
+            <ul className='hidden sm:flex gap-8 text-sm text-gray-700'>
                 <NavLink to='/' className='flex flex-col items-center gap-1'>
                     <p className='hover:text-black'>HOME</p>
                     <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
@@ -33,7 +33,7 @@ const Navbar = () => {
                 </NavLink>
             </ul>
 
-            <div className='flex items-center gap-5'>
+            <div className='flex items-center gap-8'>
                 <img src={assets.search_icon} className='w-5 cursor-pointer ' alt="" />
                 <div className='group relative '>
                     <img className='w-5 cursor-pointer' src={assets.profile_icon} alt="" />
