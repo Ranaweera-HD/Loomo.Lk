@@ -70,9 +70,11 @@ import support_img from './support_img.png'
 import menu_icon from './menu_icon.png'
 import about_img from './about_img.png'
 import contact_img from './contact_img.png'
-import razorpay_logo from './razorpay_logo.png'
-import stripe_logo from './stripe_logo.png'
+import visa from './visa.png'
+import koko from './koko.png'
 import cross_icon from './cross_icon.png'
+import cash_delivery from './cash_delivery.png'
+
 
 export const assets = {
     logo,
@@ -90,9 +92,10 @@ export const assets = {
     menu_icon,
     about_img,
     contact_img,
-    razorpay_logo,
-    stripe_logo,
-    cross_icon
+    visa,
+    koko,
+    cross_icon,
+    cash_delivery
 }
 
 export const products = [
